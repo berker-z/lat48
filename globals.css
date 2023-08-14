@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,6 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
-
 
 .flex-center {
   @apply flex justify-center items-center;
@@ -26,15 +25,18 @@
   @apply flex justify-between items-center;
 }
 
-
 .logo_sil {
-  @apply w-6 h-6 text-gray-700 mr-2 opacity-100 group-hover:opacity-0 transition-opacity duration-100 ease-in-out
+  @apply w-6 h-6 text-gray-700 mr-2 opacity-100 group-hover:opacity-0 transition-opacity duration-100 ease-in-out;
 }
 
 .logo_full {
-  @apply w-6 h-6 text-gray-700 mr-2 opacity-0 group-hover:opacity-100 absolute top-0 left-0 transition-opacity duration-100 ease-in-out
+  @apply w-6 h-6 text-gray-700 mr-2 opacity-0 group-hover:opacity-100 absolute top-0 left-0 transition-opacity duration-100 ease-in-out;
 }
 
 .boxxy {
-  @apply bg-cyan-300 border border-gray-700 rounded hover:shadow-lg
+  @apply bg-cyan-300 border border-gray-700 rounded hover:shadow-lg;
+}
+
+.baslik {
+  @apply text-gray-700 text-5xl font-bold p-3;
 }
