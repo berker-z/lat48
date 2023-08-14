@@ -1,4 +1,4 @@
-import Team2 from "@components/Team2";
+import Team2 from "@components/Team";
 import React from "react";
 import Image from "next/image";
 

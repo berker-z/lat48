@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <section className=" text-xl font-ubuntu">
       <AltHero />
-      <Linktr />
+
       <Team />
-      <section className=" mt-20 w-1/3 pt-10 boxxy mx-auto flex-center flex-col">
+      <section className=" mt-20 w-1/3 pt-10 boxxy space-y-3 mx-auto flex-center flex-col ">
         <Image
           src="/assets/images/karım.jpg"
           alt="something"
@@ -27,6 +27,7 @@ const Home = () => {
           </span>
         </h1>
       </section>
+      <Linktr />
     </section>
   );
 };
