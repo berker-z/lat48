@@ -7,15 +7,14 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <>
-      <section
+    <html lang="en">
+      <body
         className="font-ubuntu text-gray-700 bg-repeat bg-auto"
         style={{ backgroundImage: "url(/assets/images/bg.jpg" }}
       >
-        <Navbar />
-        <body>{children}</body>
-      </section>
-    </>
+        {children}
+      </body>
+    </html>
   );
 };
 

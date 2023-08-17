@@ -7,7 +7,7 @@ export const personData = [
   {
     src: "/assets/images/berker.png",
     name: "berkerz",
-    desc: "Berker is a high impact product leader with a wealth of experience in guiding business and product development. His expertise encompasses formulating go-to-market strategies, orchestrating cross-functional operations, and fostering market entry and user expansion, particularly within the dynamic realm of the blockchain ecosystem.",
+    desc: "Berkerz is a high impact product leader with a wealth of experience in guiding business and product development. His expertise encompasses formulating go-to-market strategies, orchestrating cross-functional operations, and fostering market entry and user expansion, particularly within the dynamic realm of the blockchain ecosystem.",
   },
   {
     src: "/assets/images/hannah.jpg",

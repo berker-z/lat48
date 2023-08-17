@@ -4,13 +4,13 @@ import "globals.css";
 
 function Navbar() {
   return (
-    <nav className=" w-3/6 mx-auto bg-cyan-300 border-2 border-gray-700 rounded-b-xl justify-between flex space-x-8 content-center mb-5">
+    <nav className=" w-1/2 mx-auto bg-cyan-300 border-2 border-gray-700 rounded-b-xl justify-between flex space-x-8 content-center mb-5">
       <div className="inline-block justify-start font-ubuntu">
         <Link href="/" className=" inline-block py-3 pl-3 align-middle">
           <Image
-            src="/assets/images/logo.svg"
+            src="/assets/images/latlogo.png"
             alt="something"
-            width={30}
+            width={100}
             height={30}
             className="mr-2"
           />

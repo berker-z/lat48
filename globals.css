@@ -38,5 +38,9 @@
 }
 
 .baslik {
-  @apply text-gray-700 text-5xl font-bold p-3;
+  @apply text-gray-700 text-5xl font-bold p-3 pr-5 mb-5 w-min ;
+}
+
+.todo {
+  @apply text-gray-700 text-3xl p-3 pr-5 mb-5 ;
 }

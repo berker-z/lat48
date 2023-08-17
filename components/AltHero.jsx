@@ -2,9 +2,16 @@ import React from "react";
 import Image from "next/image";
 const AltHero = () => {
   return (
-    <div className="flex justify-start space-x-5 mb-2 px-5 mx-auto w-2/4 h-auto">
+    <div className="flex justify-start space-x-5 mb-2  mx-auto w-2/4 h-auto">
       <div className="w-1/2 boxxy justify-center h-min">
-        <h1 className="text-5xl font-bold text-sky-800">Lat 48</h1>
+        <Image
+          src="/assets/images/latlogo.png"
+          alt="something"
+          width={300}
+          height={80}
+          className=""
+        />
+
         <p>
           Lat48 is a geographically distributed team of finance consultants and
           crypto vets skilled at building and scaling teams, transforming legacy
