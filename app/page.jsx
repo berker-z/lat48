@@ -10,9 +10,8 @@ import Navbar from "@components/Navbar";
 const Home = () => {
   return (
     <section className=" text-xl font-ubuntu">
-      <Navbar />
       <AltHero />
-      <Todo />
+
       <Team />
       <section className=" mt-20 w-1/3 pt-10 boxxy space-y-3 mx-auto flex-center flex-col ">
         <Image

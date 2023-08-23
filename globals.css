@@ -32,15 +32,19 @@
 .logo_full {
   @apply w-6 h-6 text-gray-700 mr-2 opacity-0 group-hover:opacity-100 absolute top-0 left-0 transition-opacity duration-100 ease-in-out;
 }
+.boxxy-gray {
+  @apply  bg-slate-300 border border-gray-700 rounded hover:shadow-lg;
+}
 
 .boxxy {
   @apply bg-cyan-300 border border-gray-700 rounded hover:shadow-lg;
 }
 
 .baslik {
-  @apply text-gray-700 text-5xl font-bold p-3 pr-5 mb-5 w-min ;
+  @apply text-gray-700 text-5xl font-bold p-3 pr-5 mb-5 w-fit ;
 }
 
 .todo {
   @apply text-gray-700 text-3xl p-3 pr-5 mb-5 ;
 }
+

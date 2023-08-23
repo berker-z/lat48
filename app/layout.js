@@ -12,6 +12,7 @@ const RootLayout = ({ children }) => {
         className="font-ubuntu text-gray-700 bg-repeat bg-auto"
         style={{ backgroundImage: "url(/assets/images/bg.jpg" }}
       >
+        <Navbar />
         {children}
       </body>
     </html>

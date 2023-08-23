@@ -20,9 +20,12 @@ function Navbar() {
         </p>
       </div>
       <div className="inline-block justify-end my-auto">
-        <button className=" bg-slate-200 align-middle rounded-md mx-3 px-2 text-gray-900 border border-gray-900 font-semibold hover:border-2">
-          contact us
-        </button>
+        <Link
+          href="/todo"
+          className=" bg-slate-200 align-middle rounded-md mx-3 px-2 text-gray-900 border border-gray-900 font-semibold hover:border-2 text-3xl"
+        >
+          todo
+        </Link>
       </div>
     </nav>
   );
