@@ -188,13 +188,19 @@ export default function Todo() {
               onChange={(e) => setNewTodo(e.target.value)}
               className=" boxxy-gray w-2/3 h-24 text-3xl resize"
               placeholder="Add something to do"
-              onKeyDown={(e) => {
+              onKeyDownCapture={(e) => {
                 if (e.key === "Enter") {
                   handleAddTodo();
                 }
               }}
             />
           </div>
+          <button
+            onClick={handleAddTodo}
+            className=" bg-slate-200 align-middle rounded-md my-3 px-2 text-gray-900 border border-gray-900 font-semibold hover:border-2 text-3xl"
+          >
+            add
+          </button>
         </div>
       </div>
     </>
