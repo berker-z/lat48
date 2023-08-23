@@ -21,13 +21,6 @@ const Home = () => {
           height={800}
           className="mr-2"
         />
-        <h1 className="text-center font-ubuntu ">
-          lorem ipsum canım gülüm
-          <br />
-          <span className="text-center text-blue-500 text-lg font-bold">
-            seblayı çok seviyorum
-          </span>
-        </h1>
       </section>
       <Linktr />
     </section>

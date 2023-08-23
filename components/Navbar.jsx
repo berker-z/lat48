@@ -16,7 +16,7 @@ function Navbar() {
           />
         </Link>
         <p className="inline-block text-gray-700 font-bold text-3xl align-middle">
-          CANIM KARIM
+          ouh
         </p>
       </div>
       <div className="inline-block justify-end my-auto">
