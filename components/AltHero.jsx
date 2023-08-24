@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 const AltHero = () => {
   return (
-    <div className="flex justify-start space-x-5 mb-2  mx-auto w-2/4 h-auto">
-      <div className="w-1/2 boxxy justify-center h-min">
+    <div className="flex justify-start space-x-5 mb-2  mx-auto  h-auto">
+      <div className="boxxy justify-center h-min">
         <Image
           src="/assets/images/latlogo.png"
           alt="something"

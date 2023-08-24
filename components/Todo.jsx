@@ -86,7 +86,7 @@ const TodoItem = ({ _id, done, text, fetchTodos }) => {
         <button
           onClick={(e) => {
             setStatus(!status);
-            handleComplete(); // Call the handleComplete function
+            handleComplete();
           }}
         >
           {done ? (
@@ -169,8 +169,8 @@ export default function Todo() {
 
   return (
     <>
-      <div className="flex place-content-center">
-        <div className="w-1/2">
+      <div className="flex">
+        <div className="">
           <p className="boxxy baslik">{"/"}todo</p>
           {todos.map((todo) => (
             <TodoItem

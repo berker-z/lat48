@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const Linktr = () => {
   return (
-    <div className=" fixed bottom-10 right-10 bg-rose-300 w-fit mt-2 py-1 px-4 border border-gray-700 mx-auto rounded hover:shadow-lg">
+    <div className="hidden lg:block md:block fixed bottom-10 right-10 bg-rose-300 w-fit mt-2 py-1 px-4 border border-gray-700 mx-auto rounded hover:shadow-lg">
       <p className="flex font-bold text-3xl w-full">Reach us on</p>
       <br />
       <ul className=" text-xl">
