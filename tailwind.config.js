@@ -23,7 +23,7 @@ module.exports = {
         ubuntu: ["Ubuntu Mono", "monospace"],
       },
       backdropBlur: {
-        xs: "2px",
+        xs: "1px",
       },
       colors: {
         "primary-orange": "#FF5722",

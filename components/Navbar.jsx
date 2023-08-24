@@ -1,10 +1,29 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import "globals.css";
+import { useState, useEffect } from "react";
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const changeOpacity = () => {
+    if (window.scrollY >= 60) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeOpacity);
+  }, []);
+
   return (
-    <div className="sticky w-auto mb-5 z-10 top-0  boxxy">
+    <div
+      className={`sticky w-auto mb-5 z-10 top-0 ${
+        scrolled ? " boxxy-flat" : "boxxy"
+      }`}
+    >
       <nav className="  justify-between flex space-x-8 content-center">
         <div className="inline-block justify-start font-ubuntu">
           <Link href="/" className=" inline-block py-3 pl-3 align-middle">

@@ -4,7 +4,7 @@ import { personData } from "@data/personData";
 
 const Person = ({ src, name, desc }) => {
   return (
-    <div className="boxxy basis-1/3 group relative h-auto p-3">
+    <div className="boxxy basis-1/3 group relative h-auto px-5 py-7">
       <div className="flex-center  flex-col">
         <Image
           src={src}
@@ -24,7 +24,7 @@ const Person = ({ src, name, desc }) => {
 
 const Team = () => {
   return (
-    <div className="flex place-content-center ">
+    <div className="flex place-content-center pt-20">
       <div className="">
         <p className="boxxy baslik">{"/"}team</p>
         <div className="flex sm:flex-col space-x-3">

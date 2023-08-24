@@ -5,7 +5,7 @@ export const personData = [
     desc: "Craig has 15 years of experience being a trusted advisor capable of delivering end-to-end solutions, operational excellence, and go-to-market strategy for leading Microsoft products and services. Expertise areas include product-market-fit, brand, product, and compete strategy, operations management, UX and market research, BI and analytics reporting, financial budgeting, analysis, and forecasting, and application and tool development.",
   },
   {
-    src: "/assets/images/berker.png",
+    src: "/assets/images/berker.jpg",
     name: "berkerz",
     desc: "Berkerz is a high impact product leader with a wealth of experience in guiding business and product development. His expertise encompasses formulating go-to-market strategies, orchestrating cross-functional operations, and fostering market entry and user expansion, particularly within the dynamic realm of the blockchain ecosystem.",
   },
