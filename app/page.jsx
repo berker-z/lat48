@@ -8,11 +8,11 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <section className=" text-xl font-ubuntu">
-      <AltHero />
+    <section className=" text-xl font-ubuntu space-y-5">
+      {/* <AltHero /> */}
       <Carousel />
       <Team />
-      <section className=" mt-20 w-1/3 pt-10 boxxy space-y-3 mx-auto flex-center flex-col ">
+      <div className=" mt-20 w-1/3 pt-10 boxxy space-y-3 mx-auto flex-center flex-col ">
         <Image
           src="/assets/images/karım.jpg"
           alt="something"
@@ -20,7 +20,7 @@ const Home = () => {
           height={800}
           className="mr-2"
         />
-      </section>
+      </div>
       <Linktr />
     </section>
   );
