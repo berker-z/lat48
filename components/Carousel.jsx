@@ -9,9 +9,7 @@ const CarouselItem = ({ src, head, desc, btntext, btnlink }) => {
     <div className="  flex sm:flex-col-reverse flex-grow  gap-y-5 justify-between  pt-14">
       <div className=" basis-1/2 py-5  flex flex-col place-content-center justify-evenly">
         <h1 className="boxxy baslik">/{head}</h1>
-        <p1 className=" text-2xl backdrop-blur-xs  p-5 rounded-lg border border-slate-700">
-          {desc}
-        </p1>
+        <p1 className=" text-2xl p-5 boxxy-gray">{desc}</p1>
         <br />
         <Link href={btnlink} className="bg-slate-300 border rounded-md w-fit ">
           {btntext}

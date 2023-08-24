@@ -30,11 +30,11 @@
   @apply w-6 h-6 text-gray-700 mr-2 opacity-0 group-hover:opacity-100 absolute top-0 left-0 transition-opacity duration-100 ease-in-out;
 }
 .boxxy-gray {
-  @apply  bg-slate-300 bg-opacity-80 border border-gray-700 rounded hover:shadow-lg;
+  @apply  bg-slate-200 bg-opacity-80 border border-gray-700 rounded hover:shadow-lg backdrop-blur-xs;
 }
 
 .boxxy {
-  @apply bg-cyan-300 bg-opacity-80 border border-gray-700 rounded hover:shadow-lg backdrop-blur-xs;
+  @apply bg-cyan-300 bg-opacity-70 border border-gray-700 rounded hover:shadow-lg backdrop-blur-xs;
 }
 
 .baslik {
@@ -42,9 +42,9 @@
 }
 
 .todo {
-  @apply text-gray-700 text-3xl p-3 pr-5 mb-5 text-left blur;
+  @apply text-gray-700 text-3xl p-3 pr-5 mb-5 text-left ;
 }
 
 .boxxy-flat {
-  @apply bg-cyan-300 border border-gray-700 rounded hover:shadow-lg bg-opacity-95;
+  @apply bg-cyan-300 border border-gray-700 rounded hover:shadow-lg;
 }

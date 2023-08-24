@@ -12,7 +12,7 @@ const Home = () => {
       {/* <AltHero /> */}
       <Carousel />
       <Team />
-      <div className=" mt-20 w-1/3 pt-10 boxxy space-y-3 mx-auto flex-center flex-col ">
+      <div className=" mt-20 w-1/3 p-5 boxxy space-y-3 mx-auto flex-center flex-col ">
         <Image
           src="/assets/images/karım.jpg"
           alt="something"
