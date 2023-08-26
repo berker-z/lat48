@@ -17,7 +17,7 @@ const Linktr = () => {
     <div className="hidden lg:block fixed bottom-10 right-10 bg-rose-300 w-fit mt-2 py-1 px-4 border border-gray-700 mx-auto rounded hover:shadow-lg">
       <p className="flex font-bold text-3xl w-full">Reach us on</p>
       <br />
-      <ul className=" text-xl">
+      <ul className="">
         <li className="group relative w-min">
           <a
             href={"https://t.me/berkerz"}

@@ -24,22 +24,19 @@ function Navbar() {
         scrolled ? " boxxy-flat" : "boxxy"
       }`}
     >
-      <nav className="  justify-between flex space-x-8 content-center">
-        <div className="inline-block justify-start font-ubuntu">
+      <nav className="  justify-between flex content-center">
+        <div className="">
           <Link href="/" className=" inline-block py-3 pl-3 align-middle">
             <Image
-              src="/assets/images/latlogo.png"
+              src="/assets/images/latnew.svg"
               alt="something"
               width={150}
               height={150}
-              className="mr-2"
+              className="mr-2 object-cover"
             />
           </Link>
-          <p className="inline-block text-gray-700 font-bold text-3xl align-middle">
-            ouh
-          </p>
         </div>
-        <div className="inline-block justify-end my-auto">
+        <div className=" my-auto">
           <Link
             href="/todo"
             className=" bg-slate-200 align-middle rounded-md mx-3 px-2 text-gray-900 border border-gray-900 font-semibold hover:border-2 text-3xl"

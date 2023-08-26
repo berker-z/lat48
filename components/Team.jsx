@@ -27,7 +27,7 @@ const Team = () => {
     <div className="flex place-content-center pt-20">
       <div className="">
         <p className="boxxy baslik">{"/"}team</p>
-        <div className="flex sm:flex-col space-x-3">
+        <div className="grid grid-cols-3 sm:grid-cols-1 notsm:space-x-3 sm:space-y-3">
           <Person {...personData[0]} />
           <Person {...personData[1]} />
           <Person {...personData[2]} />

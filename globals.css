@@ -23,11 +23,11 @@
 }
 
 .logo_sil {
-  @apply w-6 h-6 text-gray-700 mr-2 opacity-100 group-hover:opacity-0 transition-opacity duration-100 ease-in-out;
+  @apply text-3xl mr-2 opacity-100 group-hover:opacity-0 transition-opacity duration-100 ease-in-out;
 }
 
 .logo_full {
-  @apply w-6 h-6 text-gray-700 mr-2 opacity-0 group-hover:opacity-100 absolute top-0 left-0 transition-opacity duration-100 ease-in-out;
+  @apply text-3xl mr-2 opacity-0 group-hover:opacity-100 absolute top-0 left-0 transition-opacity duration-100 ease-in-out;
 }
 .boxxy-gray {
   @apply  bg-slate-200 bg-opacity-80 border border-gray-700 rounded hover:shadow-lg backdrop-blur-xs;

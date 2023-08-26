@@ -10,10 +10,12 @@ module.exports = {
       sm: { max: "820px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
-      md: { min: "821px", max: "1609px" },
+      md: { min: "821px", max: "1900px" },
       // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-      lg: { min: `1700px` },
+      lg: { min: `1901px` },
+
+      notsm: { min: "821px" },
     },
 
     extend: {
