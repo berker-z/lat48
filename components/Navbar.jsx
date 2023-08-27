@@ -74,7 +74,7 @@ function Navbar() {
           >
             <Link href="/todo">todo</Link>
             <Link href="/todo">about</Link>
-            <Link href="/todo">team</Link>
+            <Link href="/team">team</Link>
           </div>
         </div>
       </nav>

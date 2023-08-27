@@ -48,3 +48,16 @@
 .boxxy-flat {
   @apply bg-cyan-300 border border-gray-700 rounded hover:shadow-lg;
 }
+
+.transition-fade {
+  opacity: 0;
+ 
+
+  @apply hidden;
+}
+
+.transition-fade.active {
+  opacity: 1;
+  transition: opacity 1s;
+  @apply block;
+}

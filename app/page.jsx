@@ -3,7 +3,7 @@ import Linktr from "@components/Linktr";
 import Team from "@components/Team";
 import Hero from "@components/Hero";
 import AltHero from "components/AltHero";
-
+import TeamSm from "@components/TeamSm";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +13,7 @@ const Home = () => {
       <Carousel />
       <Team />
       <Linktr />
+      <TeamSm />
     </div>
   );
 };
