@@ -3,8 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import "globals.css";
 import { useState, useEffect } from "react";
-
+import { useRef } from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
+import Logo from "./Logo";
 function Navbar() {
+  const menuRef = useRef(null);
+  const [hamburgerToggle, setHamburgerToggle] = useState(false);
+
   const [scrolled, setScrolled] = useState(false);
   const changeOpacity = () => {
     if (window.scrollY >= 60) {
@@ -13,6 +18,22 @@ function Navbar() {
       setScrolled(false);
     }
   };
+  const handleHamburgerToggle = () => {
+    const newToggle = !hamburgerToggle;
+    return setHamburgerToggle(newToggle);
+  };
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setHamburgerToggle(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
 
   useEffect(() => {
     window.addEventListener("scroll", changeOpacity);
@@ -36,13 +57,25 @@ function Navbar() {
             />
           </Link>
         </div>
-        <div className=" my-auto">
-          <Link
-            href="/todo"
-            className=" bg-slate-200 align-middle rounded-md mx-3 px-2 text-gray-900 border border-gray-900 font-semibold hover:border-2 text-3xl"
+
+        <div className=" my-auto relative w-fit mr-5 ml-10 " ref={menuRef}>
+          <button
+            onClick={handleHamburgerToggle}
+            className={` text-size-3xl rounded-full p-2 ${
+              hamburgerToggle ? " bg-gray-700 shrink-0  bg-opacity-70" : ""
+            }`}
           >
-            todo
-          </Link>
+            <RxHamburgerMenu />
+          </button>
+          <div
+            className={`absolute    translate-x-5 justify-items-end top-full mt-4 py-3 px-5 right-0 z-10 flex flex-col divide-y-2 divide-gray-700 divide-dashed gap-y-2 ${
+              hamburgerToggle ? "block" : "hidden"
+            } ${scrolled ? "boxxy-flat" : "boxxy-flat"}`}
+          >
+            <Link href="/todo">todo</Link>
+            <Link href="/todo">about</Link>
+            <Link href="/todo">team</Link>
+          </div>
         </div>
       </nav>
     </div>

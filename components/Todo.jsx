@@ -169,7 +169,7 @@ export default function Todo() {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex bg-pink-300">
         <div className="">
           <p className="boxxy baslik">{"/"}todo</p>
           {todos.map((todo) => (
@@ -181,26 +181,20 @@ export default function Todo() {
               fetchTodos={fetchTodos}
             />
           ))}
-          <div className="flex mt-2">
-            <textarea
-              type="text"
-              value={newTodo}
-              onChange={(e) => setNewTodo(e.target.value)}
-              className=" boxxy-gray w-2/3 h-24 text-3xl resize"
-              placeholder="Add something to do"
-              onKeyDownCapture={(e) => {
-                if (e.key === "Enter") {
-                  handleAddTodo();
-                }
-              }}
-            />
-          </div>
-          <button
-            onClick={handleAddTodo}
-            className=" bg-slate-200 align-middle rounded-md my-3 px-2 text-gray-900 border border-gray-900 font-semibold hover:border-2 text-3xl"
-          >
-            add
-          </button>
+
+          <textarea
+            type="text"
+            value={newTodo}
+            onChange={(e) => setNewTodo(e.target.value)}
+            className="  notsm:w-max boxxy-gray h-24 text-3xl resize"
+            placeholder="Add something to do"
+            cols={35}
+            onKeyDownCapture={(e) => {
+              if (e.key === "Enter") {
+                handleAddTodo();
+              }
+            }}
+          />
         </div>
       </div>
     </>

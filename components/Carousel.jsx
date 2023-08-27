@@ -52,7 +52,7 @@ const Carousel = () => {
   };
 
   return (
-    <div>
+    <div className="bg-pink-300">
       <CarouselItem {...carouselData[currentIndex]} />{" "}
       <button onClick={handleLeft}>"SOL"</button>
       <button onClick={handleRight}>"SAĞ"</button>
