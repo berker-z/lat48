@@ -143,6 +143,7 @@ export default function Todo() {
 
   useEffect(() => {
     fetchTodos();
+    console.log("used some effect");
   }, []);
 
   const handleAddTodo = async () => {
@@ -169,7 +170,7 @@ export default function Todo() {
 
   return (
     <>
-      <div className="flex bg-pink-300">
+      <div className="flex">
         <div className="">
           <p className="boxxy baslik">{"/"}todo</p>
           {todos.map((todo) => (

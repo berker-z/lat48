@@ -24,7 +24,7 @@ const Person = ({ src, name, desc }) => {
 
 const Team = () => {
   return (
-    <div className="flex place-content-center pt-20">
+    <div className="flex place-content-center pt-20 sm:hidden">
       <div className="">
         <p className="boxxy baslik">{"/"}team</p>
         <div className="grid grid-cols-3 space-x-3">

@@ -19,9 +19,9 @@ const TeamPage = () => {
           teamToggle ? "max-h-full opacity-100" : ""
         }`}
       >
-        <Team />
+        <Team className="sm:hidden" />
       </div>
-      <TeamSm />
+      <TeamSm className="notsm:hidden" />
     </div>
   );
 };

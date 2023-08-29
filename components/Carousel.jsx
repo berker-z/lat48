@@ -12,7 +12,7 @@ const CarouselItem = ({ src, head, desc, btntext, btnlink }) => {
         {/* left side */}
         <div className="basis-1/2 grid grid-cols-1 justify-between">
           <h1 className="boxxy baslik h-fit">{head}</h1>
-          <p1 className="text-2xl p-5 mb-5 boxxy-gray">{desc}</p1>
+          <p className="text-2xl p-5 mb-5 boxxy-gray">{desc}</p>
 
           <Link
             href={btnlink}
@@ -52,7 +52,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="bg-pink-300">
+    <div className="">
       <CarouselItem {...carouselData[currentIndex]} />{" "}
       <button onClick={handleLeft}>"SOL"</button>
       <button onClick={handleRight}>"SAĞ"</button>

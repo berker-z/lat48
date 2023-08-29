@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export const Person = ({ src, name, desc }) => {
   return (
-    <div className="boxxy basis-1/3 group relative h-auto px-5 py-7 mx-3">
-      <div className="flex-center  flex-col">
+    <div className="boxxy group relative h-auto px-5 py-7 mx-3">
+      <div className="flex-center flex-col">
         <Image
           src={src}
           alt=""
@@ -35,7 +35,7 @@ const TeamSm = () => {
   };
 
   return (
-    <div className=" overflow-hidden mx-auto max-w-md h-auto">
+    <div className=" overflow-hidden relative mx-auto max-w-md h-auto notsm:hidden">
       <div
         className="top-0 left-0 w-full h-auto flex  transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -46,8 +46,8 @@ const TeamSm = () => {
           </div>
         ))}
       </div>
-      <button onClick={handlePrev}>Prev</button>
-      <button onClick={handleNext}>Next</button>
+      <button onClick={handlePrev} className="absolute top-32 left-8 text-3xl px-3 py-1 rounded-lg bg-slate-600 bg-opacity-0 hover:bg-opacity-40">❮</button>
+      <button onClick={handleNext} className="absolute top-32 right-8 text-3xl px-3 py-1 rounded-lg bg-slate-600 bg-opacity-0 hover:bg-opacity-30">❯</button>
     </div>
   );
 };
